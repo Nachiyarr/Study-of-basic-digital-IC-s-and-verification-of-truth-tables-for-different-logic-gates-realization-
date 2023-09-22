@@ -78,7 +78,7 @@ Y= A⊕B
    - Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform..
      
 # PROGRAM:
-```
+
 
 
 Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
@@ -88,18 +88,23 @@ RegisterNumber: 212222240006
  
 
 
-module nachi(a,b,y1,y2,y3,y4,y5,y6,y7);
-input a,b;
-output y1,y2,y3,y4,y5,y6,y7;
-and (y1,a,b);
-or (y2,a,b);
-not (y3,a);
-xor (y4,a,b);
-nand (y5,a,b);
-nor (y6,a,b)
-xnor (y7,a,b);
-endmodule 
 ```
+
+module nachi(a,b,yand,yor,ynot,yxor,ynand,ynor,yxnor); 
+input a,b;
+output yand,yor,ynot,yxor,ynand,ynor,yxnor;
+and(yand,a,b);
+or(yor,a,b);
+not(ynot,a);
+xor(yxor,a,b);
+nand(ynand,a,b);
+nor(ynor,a,b);
+xnor(yxnor,a,b);
+endmodule
+```
+
+
+
 
  
  
@@ -109,7 +114,8 @@ endmodule
 # OUTPUT:
 # LOGIC SYMBOL AND TRUTH TABLE: 
 
-![image](https://github.com/Nachiyarr/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/113497340/cc826fd6-02d6-4cbe-9515-8382c409983d)
+![image](https://github.com/Nachiyarr/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/113497340/a93c793a-dd1d-4c52-8d48-667bcb9bea01)
+
 
 
 ![de exp 1 gate](https://github.com/Nachiyarr/Study-of-basic-digital-IC-s-and-verification-of-truth-tables-for-different-logic-gates-realization-/assets/113497340/becb208e-763a-4af6-9acd-5218d7afc1ce)
